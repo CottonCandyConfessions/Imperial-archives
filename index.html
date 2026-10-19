@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#310910">
+  <title>A Thousand Petals Beneath the Sky</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="sparkles"></canvas>
+  <div id="petals" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">✥ IMPERIAL ARCHIVES</a>
+    <button id="motion-toggle" type="button">Pause effects</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A RECORD OF THE T'SING DYNASTY</p>
+
+        <h1>
+          A Thousand Petals
+          <em>Beneath the Sky</em>
+        </h1>
+
+        <div class="ornament">❧ ✦ ❧</div>
+
+        <p class="subtitle">
+          The official companion archive chronicling the T'sing Dynasty,
+          its imperial and noble houses, ancient customs, courtly traditions,
+          and the histories woven through generations.
+        </p>
+
+        <a class="scroll-link" href="#dynasty">
+          ENTER THE ARCHIVES <span>↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section dynasty" id="dynasty">
+      <p class="eyebrow">BEYOND THE PALACE GATES</p>
+      <h2>The <em>T'sing</em> Dynasty</h2>
+      <p class="section-intro">
+        An empire shaped by lineage, duty, ambition, and the intricacies of family.
+      </p>
+
+      <div class="intro-grid">
+        <article class="info-card">
+          <p class="card-label">UPON THE DRAGON THRONE</p>
+          <div class="dragon">龍</div>
+          <h3>The Reigning Emperor</h3>
+          <p>Meet the sovereign whose reign defines the present chapter of imperial history.</p>
+
+          <dl>
+            <div><dt>Regnal title</dt><dd>[Emperor's title]</dd></div>
+            <div><dt>Imperial era</dt><dd>[Era name]</dd></div>
+            <div><dt>Years of reign</dt><dd>[Reign dates]</dd></div>
+          </dl>
+
+          <a href="royal-household/index.html" class="text-link">
+            The Royal Household ↗
+          </a>
+        </article>
+
+        <article class="info-card era-card">
+          <p class="card-label">THE IMPERIAL CALENDAR</p>
+          <div class="year">1650</div>
+          <p class="card-label">CIRCA THE MID-SEVENTEENTH CENTURY</p>
+          <div class="ornament">❧ ✦ ❧</div>
+          <h3>The Imperial Era</h3>
+          <p>
+            The present setting of the chronicles. The fictional regnal year
+            and calendar details can be added here.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gateways" id="archives">
+      <p class="eyebrow">FOUR PATHS THROUGH THE ARCHIVES</p>
+      <h2>Enter the <em>Records</em></h2>
+      <p class="section-intro">
+        Explore the bloodlines, traditions, and histories of the realm.
+      </p>
+
+      <div class="gateway-grid">
+
+        <a class="gateway" href="royal-household/index.html">
+          <span class="roman">I</span>
+          <span class="gateway-icon">♛</span>
+          <p class="card-label">THE IMPERIAL FAMILY</p>
+          <h3>The Royal <em>Household</em></h3>
+          <p>Emperors, consorts, princes, spouses, children, and imperial lineages.</p>
+          <span class="gateway-link">OPEN THE HOUSEHOLD ↗</span>
+          <span class="flower">❀</span>
+        </a>
+
+        <a class="gateway" href="noble-genealogy/index.html">
+          <span class="roman">II</span>
+          <span class="gateway-icon">❧</span>
+          <p class="card-label">THE GREAT HOUSES</p>
+          <h3>The Noble <em>Genealogy</em></h3>
+          <p>Noble families, descendants, marriages, and alliances between houses.</p>
+          <span class="gateway-link">TRACE THE BLOODLINES ↗</span>
+          <span class="flower">✿</span>
+        </a>
+
+        <a class="gateway" href="laws-customs/index.html">
+          <span class="roman">III</span>
+          <span class="gateway-icon">卷</span>
+          <p class="card-label">EDICTS & TRADITIONS</p>
+          <h3>Laws, Customs <em>& Omegaverse</em></h3>
+          <p>Marriage, inheritance, ranks, secondary genders, bonds, and succession.</p>
+          <span class="gateway-link">CONSULT THE CODES ↗</span>
+          <span class="flower">❁</span>
+        </a>
+
+        <a class="gateway" href="the-realm/index.html">
+          <span class="roman">IV</span>
+          <span class="gateway-icon">山</span>
+          <p class="card-label">LANDS & DOMINIONS</p>
+          <h3>The <em>Realm</em></h3>
+          <p>Palaces, royal residences, provinces, neighbouring states, and diplomacy.</p>
+          <span class="gateway-link">EXPLORE THE REALM ↗</span>
+          <span class="flower">✾</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="section announcements" id="announcements">
+      <p class="eyebrow">SEALED INTO THE RECORD</p>
+      <h2>Imperial <em>Announcements</em></h2>
+
+      <article class="notice">
+        <span class="notice-date">ARCHIVE NOTICE · 01</span>
+        <div>
+          <h3>The archives are being prepared</h3>
+          <p>New records, family histories, and worldbuilding entries will be added as the chronicles unfold.</p>
+        </div>
+        <span class="notice-symbol">✦</span>
+      </article>
+
+      <article class="notice">
+        <span class="notice-date">CHRONICLE UPDATE · 02</span>
+        <div>
+          <h3>[Your next announcement]</h3>
+          <p>Replace this text with a chapter update or a new archival entry.</p>
+        </div>
+        <span class="notice-symbol">❧</span>
+      </article>
+    </section>
+
+    <section class="closing">
+      <div class="ornament">❧ ✦ ❧</div>
+      <p>Every house keeps its histories. Every generation leaves its mark.</p>
+      <span>THE IMPERIAL ARCHIVES · T'SING DYNASTY</span>
+    </section>
+  </main>
+
+  <footer>
+    <span>IMPERIAL ARCHIVES</span>
+    <span>✿</span>
+    <span>A FICTIONAL COMPANION ARCHIVE</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
