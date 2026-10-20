@@ -4,180 +4,444 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#310910">
-  <title>A Thousand Petals Beneath the Sky</title>
+  <meta name="theme-color" content="#300b10">
+
+  <title>A Thousand Petals Beneath the Sky | Imperial Archives</title>
+
+  <meta
+    name="description"
+    content="The Imperial Archives of the T'sing Dynasty: a chronicle of the royal household, noble families, imperial laws, customs, and the realm."
+  >
+
+  <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
+  <!-- Decorative effects -->
+  <div class="effects-layer" aria-hidden="true">
+    <canvas id="particles"></canvas>
+    <div id="petals"></div>
+  </div>
 
-  <canvas id="sparkles"></canvas>
-  <div id="petals" aria-hidden="true"></div>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="archive-mark" href="index.html" aria-label="Imperial Archives home">
+      <span class="mark-symbol">❖</span>
+      <span>THE T'SING DYNASTY</span>
+    </a>
 
+    <a class="header-title" href="index.html">IMPERIAL ARCHIVES</a>
 
-<header class="topbar">
-  <a class="brand" href="index.html">
-    <span class="brand-seal">✥</span>
-    <span>IMPERIAL ARCHIVES</span>
-  </a>
-</header>
-
+    <div class="header-side">
+      <span class="header-seal">御</span>
+    </div>
+  </header>
 
   <main>
+    <!-- Hero -->
     <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">A RECORD OF THE T'SING DYNASTY</p>
-
-        <h1>
-          A Thousand Petals
-          <em>Beneath the Sky</em>
-        </h1>
-
-        <div class="ornament">❧ ✦ ❧</div>
-
-        <p class="subtitle">
-          The official companion archive chronicling the T'sing Dynasty,
-          its imperial and noble houses, ancient customs, courtly traditions,
-          and the histories woven through generations.
+      <div class="hero-image-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">
+          <span class="ornament">✦</span>
+          THE OFFICIAL IMPERIAL RECORD
+          <span class="ornament">✦</span>
         </p>
 
-        <a class="scroll-link" href="#dynasty">
-          ENTER THE ARCHIVES <span>↓</span>
+        <div class="hero-rule"></div>
+
+        <h1>A Thousand Petals<br><em>Beneath the Sky</em></h1>
+
+        <p class="hero-subtitle">
+          Chronicles of the T'sing Dynasty
+        </p>
+
+        <p class="hero-description">
+          A living archive of imperial bloodlines, noble houses, ancient
+          customs, and the people whose lives shape the fate of the realm.
+        </p>
+
+        <a class="gold-button" href="#archive">
+          <span>ENTER THE ARCHIVES</span>
+          <span class="button-arrow">↓</span>
         </a>
+
+        <div class="hero-bottom-note">
+          <span>ESTABLISHED UNDER HEAVEN</span>
+          <span class="note-line"></span>
+          <span>THE IMPERIAL ERA</span>
+        </div>
       </div>
+
+      <div class="hero-side-label" aria-hidden="true">
+        <span>天命所归</span>
+        <span class="side-label-line"></span>
+        <span>UNDER HEAVEN</span>
+      </div>
+
+      <a class="scroll-cue" href="#introduction" aria-label="Scroll down">
+        <span>SCROLL TO DISCOVER</span>
+        <span class="scroll-cue-line"></span>
+      </a>
     </section>
 
-    <section class="section dynasty" id="dynasty">
-      <p class="eyebrow">BEYOND THE PALACE GATES</p>
-      <h2>The <em>T'sing</em> Dynasty</h2>
-      <p class="section-intro">
-        An empire shaped by lineage, duty, ambition, and the intricacies of family.
-      </p>
+    <!-- Introduction -->
+    <section class="introduction paper-section" id="introduction">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark-eyebrow">A RECORD OF AN EMPIRE</p>
+        <h2>Every dynasty has its stories.</h2>
+        <div class="heading-divider"><span>✦</span></div>
+      </div>
 
       <div class="intro-grid">
-        <article class="info-card">
-          <p class="card-label">UPON THE DRAGON THRONE</p>
-          <div class="dragon">龍</div>
-          <h3>The Reigning Emperor</h3>
-          <p>Meet the sovereign whose reign defines the present chapter of imperial history.</p>
+        <div class="intro-emblem reveal">
+          <div class="emblem-ring">
+            <span class="emblem-character">天</span>
+            <span class="emblem-caption">BY THE MANDATE OF HEAVEN</span>
+          </div>
+        </div>
 
-          <dl>
-            <div><dt>Regnal title</dt><dd>[Emperor's title]</dd></div>
-            <div><dt>Imperial era</dt><dd>[Era name]</dd></div>
-            <div><dt>Years of reign</dt><dd>[Reign dates]</dd></div>
-          </dl>
-
-          <a href="royal-household/index.html" class="text-link">
-            The Royal Household ↗
-          </a>
-        </article>
-
-        <article class="info-card era-card">
-          <p class="card-label">THE IMPERIAL CALENDAR</p>
-          <div class="year">1650</div>
-          <p class="card-label">CIRCA THE MID-SEVENTEENTH CENTURY</p>
-          <div class="ornament">❧ ✦ ❧</div>
-          <h3>The Imperial Era</h3>
-          <p>
-            The present setting of the chronicles. The fictional regnal year
-            and calendar details can be added here.
+        <div class="intro-copy reveal">
+          <p class="drop-cap">
+            The history of an empire is written in more than the names of its
+            emperors. It lives in the marriages that unite great houses, the
+            children who inherit their parents' legacies, the customs that
+            govern the court, and the quiet choices that alter the course of
+            generations.
           </p>
-        </article>
+
+          <p>
+            Welcome to the Imperial Archives, the official repository of the
+            T'sing Dynasty. Within these records lie the lineages of the
+            royal household, the genealogies of noble families, the laws of
+            the imperial court, and the territories that together form the
+            realm.
+          </p>
+
+          <p>
+            Each name belongs to a family. Each family has a history.
+            And every history is part of something greater.
+          </p>
+
+          <div class="signature">
+            <span class="signature-line"></span>
+            <span>Recorded for posterity</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section gateways" id="archives">
-      <p class="eyebrow">FOUR PATHS THROUGH THE ARCHIVES</p>
-      <h2>Enter the <em>Records</em></h2>
-      <p class="section-intro">
-        Explore the bloodlines, traditions, and histories of the realm.
-      </p>
+    <!-- Reigning emperor -->
+    <section class="emperor-section" id="imperial-record">
+      <div class="emperor-text reveal">
+        <p class="eyebrow">THE DRAGON THRONE</p>
+        <h2>Under the Reign<br>of the Emperor</h2>
+        <div class="gold-divider"><span>❖</span></div>
 
-      <div class="gateway-grid">
+        <p class="emperor-description">
+          At the heart of the empire stands the Son of Heaven, guardian of
+          the ancestral legacy and sovereign of the realm. His reign shapes
+          the court, the succession, and the future of every house beneath
+          the imperial banner.
+        </p>
 
-        <a class="gateway" href="royal-household/index.html">
-          <span class="roman">I</span>
-          <span class="gateway-icon">♛</span>
-          <p class="card-label">THE IMPERIAL FAMILY</p>
-          <h3>The Royal <em>Household</em></h3>
-          <p>Emperors, consorts, princes, spouses, children, and imperial lineages.</p>
-          <span class="gateway-link">OPEN THE HOUSEHOLD ↗</span>
-          <span class="flower">❀</span>
-        </a>
+        <div class="imperial-facts">
+          <div class="fact">
+            <span class="fact-label">DYNASTY</span>
+            <span class="fact-value">T'sing</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">IMPERIAL ERA</span>
+            <span class="fact-value">Circa 1650</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">SEAT OF POWER</span>
+            <span class="fact-value">The Imperial Court</span>
+          </div>
+        </div>
+      </div>
 
-        <a class="gateway" href="noble-genealogy/index.html">
-          <span class="roman">II</span>
-          <span class="gateway-icon">❧</span>
-          <p class="card-label">THE GREAT HOUSES</p>
-          <h3>The Noble <em>Genealogy</em></h3>
-          <p>Noble families, descendants, marriages, and alliances between houses.</p>
-          <span class="gateway-link">TRACE THE BLOODLINES ↗</span>
-          <span class="flower">✿</span>
-        </a>
-
-        <a class="gateway" href="laws-customs/index.html">
-          <span class="roman">III</span>
-          <span class="gateway-icon">卷</span>
-          <p class="card-label">EDICTS & TRADITIONS</p>
-          <h3>Laws, Customs <em>& Omegaverse</em></h3>
-          <p>Marriage, inheritance, ranks, secondary genders, bonds, and succession.</p>
-          <span class="gateway-link">CONSULT THE CODES ↗</span>
-          <span class="flower">❁</span>
-        </a>
-
-        <a class="gateway" href="the-realm/index.html">
-          <span class="roman">IV</span>
-          <span class="gateway-icon">山</span>
-          <p class="card-label">LANDS & DOMINIONS</p>
-          <h3>The <em>Realm</em></h3>
-          <p>Palaces, royal residences, provinces, neighbouring states, and diplomacy.</p>
-          <span class="gateway-link">EXPLORE THE REALM ↗</span>
-          <span class="flower">✾</span>
-        </a>
-
+      <div class="emperor-art reveal" aria-label="Imperial ornamental design">
+        <div class="art-frame">
+          <div class="art-inner">
+            <span class="art-top">皇</span>
+            <div class="art-dragon">龍</div>
+            <span class="art-bottom">THE SON OF HEAVEN</span>
+          </div>
+        </div>
+        <span class="art-corner corner-one"></span>
+        <span class="art-corner corner-two"></span>
+        <span class="art-corner corner-three"></span>
+        <span class="art-corner corner-four"></span>
       </div>
     </section>
 
-    <section class="section announcements" id="announcements">
-      <p class="eyebrow">SEALED INTO THE RECORD</p>
-      <h2>Imperial <em>Announcements</em></h2>
+    <!-- Archive gateways -->
+    <section class="archive-section paper-section" id="archive">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark-eyebrow">EXPLORE THE RECORDS</p>
+        <h2>The Four Great Archives</h2>
+        <p class="section-description">
+          Four collections. One empire. Discover the people, traditions,
+          and places that define the world beneath the imperial sky.
+        </p>
+        <div class="heading-divider"><span>✦</span></div>
+      </div>
 
-      <article class="notice">
-        <span class="notice-date">ARCHIVE NOTICE · 01</span>
-        <div>
-          <h3>The archives are being prepared</h3>
-          <p>New records, family histories, and worldbuilding entries will be added as the chronicles unfold.</p>
-        </div>
-        <span class="notice-symbol">✦</span>
-      </article>
+      <div class="archive-grid">
+        <a class="archive-card royal-card reveal" href="royal-household/index.html">
+          <div class="card-number">I</div>
+          <div class="card-icon">龍</div>
+          <p class="card-kicker">BLOODLINE & SUCCESSION</p>
+          <h3>The Royal<br>Household</h3>
+          <div class="card-rule"></div>
+          <p class="card-description">
+            Trace the imperial family tree, from the reigning emperor and
+            his consorts to the princes, their spouses, and the next
+            generation of the royal line.
+          </p>
+          <span class="card-link">EXPLORE THE HOUSEHOLD <span>↗</span></span>
+        </a>
 
-      <article class="notice">
-        <span class="notice-date">CHRONICLE UPDATE · 02</span>
-        <div>
-          <h3>[Your next announcement]</h3>
-          <p>Replace this text with a chapter update or a new archival entry.</p>
-        </div>
-        <span class="notice-symbol">❧</span>
-      </article>
+        <a class="archive-card noble-card reveal" href="noble-genealogy/index.html">
+          <div class="card-number">II</div>
+          <div class="card-icon">梅</div>
+          <p class="card-kicker">HERITAGE & ALLIANCES</p>
+          <h3>The Noble<br>Genealogy</h3>
+          <div class="card-rule"></div>
+          <p class="card-description">
+            Enter the records of noble houses, their ancestral lines,
+            marriages, heirs, kinship ties, and connections to the
+            imperial family.
+          </p>
+          <span class="card-link">EXPLORE THE NOBILITY <span>↗</span></span>
+        </a>
+
+        <a class="archive-card laws-card reveal" href="laws-customs/index.html">
+          <div class="card-number">III</div>
+          <div class="card-icon">律</div>
+          <p class="card-kicker">LAW, RITUAL & TRADITION</p>
+          <h3>Laws, Customs<br>& Omegaverse</h3>
+          <div class="card-rule"></div>
+          <p class="card-description">
+            Discover the laws of marriage and inheritance, court ranks,
+            secondary genders, mating bonds, heats, pregnancy, and
+            imperial succession.
+          </p>
+          <span class="card-link">READ THE IMPERIAL LAWS <span>↗</span></span>
+        </a>
+
+        <a class="archive-card realm-card reveal" href="the-realm/index.html">
+          <div class="card-number">IV</div>
+          <div class="card-icon">山</div>
+          <p class="card-kicker">LANDS & DIPLOMACY</p>
+          <h3>The Realm</h3>
+          <div class="card-rule"></div>
+          <p class="card-description">
+            Journey through imperial palaces, royal residences,
+            administrative territories, neighbouring states, and the
+            diplomatic world beyond the court.
+          </p>
+          <span class="card-link">DISCOVER THE REALM <span>↗</span></span>
+        </a>
+      </div>
     </section>
 
-    <section class="closing">
-      <div class="ornament">❧ ✦ ❧</div>
-      <p>Every house keeps its histories. Every generation leaves its mark.</p>
-      <span>THE IMPERIAL ARCHIVES · T'SING DYNASTY</span>
+    <!-- Announcements -->
+    <section class="announcements-section" id="announcements">
+      <div class="announcement-decoration" aria-hidden="true">花</div>
+
+      <div class="announcement-content reveal">
+        <p class="eyebrow">FROM THE IMPERIAL SCRIBE</p>
+        <h2>Latest Announcements</h2>
+        <div class="gold-divider"><span>✦</span></div>
+
+        <div class="announcement-list">
+          <article class="announcement">
+            <div class="announcement-date">
+              <span class="announcement-day">01</span>
+              <span class="announcement-month">ARCHIVE</span>
+            </div>
+            <div class="announcement-body">
+              <span class="announcement-tag">WELCOME</span>
+              <h3>The Imperial Archives Are Open</h3>
+              <p>
+                The central archive is now open to visitors. Explore the
+                world of the T'sing Dynasty and its interconnected records.
+              </p>
+            </div>
+            <span class="announcement-seal">御</span>
+          </article>
+
+          <article class="announcement">
+            <div class="announcement-date">
+              <span class="announcement-day">02</span>
+              <span class="announcement-month">RECORDS</span>
+            </div>
+            <div class="announcement-body">
+              <span class="announcement-tag">IN DEVELOPMENT</span>
+              <h3>Genealogies & Character Records</h3>
+              <p>
+                The royal and noble genealogies will bring together the
+                families, relationships, and individual histories recorded
+                throughout the dynasty.
+              </p>
+            </div>
+            <span class="announcement-seal">家</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing section -->
+    <section class="closing-section">
+      <div class="closing-content reveal">
+        <span class="closing-symbol">❖</span>
+        <p class="eyebrow">A THOUSAND PETALS BENEATH THE SKY</p>
+        <h2>History remembers<br><em>those who leave a mark.</em></h2>
+        <a class="text-link" href="#home">RETURN TO THE BEGINNING ↑</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <span>IMPERIAL ARCHIVES</span>
-    <span>✿</span>
-    <span>A FICTIONAL COMPANION ARCHIVE</span>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <p class="footer-title">IMPERIAL ARCHIVES</p>
+    <p class="footer-subtitle">A fictional world of the T'sing Dynasty</p>
+    <p class="footer-note">
+      A fan-created fictional archive. All dynasties, characters, customs,
+      and historical records presented here belong to the author's
+      fictional universe.
+    </p>
+    <p class="copyright">© THE IMPERIAL ARCHIVES</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Reveal elements as they enter the viewport.
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach((element) => revealObserver.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add("is-visible"));
+    }
+
+    // Floating plum-blossom petals.
+    const petalContainer = document.getElementById("petals");
+    const petalSymbols = ["✿", "❀", "✧", "·"];
+
+    function createPetal() {
+      if (!petalContainer) return;
+
+      const petal = document.createElement("span");
+      petal.className = "floating-petal";
+      petal.textContent =
+        petalSymbols[Math.floor(Math.random() * petalSymbols.length)];
+
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.fontSize = (10 + Math.random() * 15) + "px";
+      petal.style.animationDuration = (10 + Math.random() * 13) + "s";
+      petal.style.animationDelay = (Math.random() * 2) + "s";
+      petal.style.setProperty("--drift", (Math.random() * 180 - 90) + "px");
+      petal.style.opacity = (0.25 + Math.random() * 0.5).toString();
+
+      petalContainer.appendChild(petal);
+
+      petal.addEventListener("animationend", () => {
+        petal.remove();
+      });
+    }
+
+    for (let i = 0; i < 18; i++) {
+      setTimeout(createPetal, i * 350);
+    }
+
+    setInterval(createPetal, 900);
+
+    // Subtle, continuously moving golden particles.
+    const canvas = document.getElementById("particles");
+    const ctx = canvas ? canvas.getContext("2d") : null;
+    let particles = [];
+    let canvasWidth = 0;
+    let canvasHeight = 0;
+
+    function resizeCanvas() {
+      if (!canvas || !ctx) return;
+
+      canvasWidth = canvas.width = window.innerWidth;
+      canvasHeight = canvas.height = window.innerHeight;
+
+      const particleCount = Math.min(
+        65,
+        Math.max(25, Math.floor(canvasWidth / 20))
+      );
+
+      particles = Array.from({ length: particleCount }, () => ({
+        x: Math.random() * canvasWidth,
+        y: Math.random() * canvasHeight,
+        radius: Math.random() * 1.5 + 0.4,
+        speed: Math.random() * 0.35 + 0.08,
+        alpha: Math.random() * 0.55 + 0.15,
+        phase: Math.random() * Math.PI * 2
+      }));
+    }
+
+    function animateParticles() {
+      if (!canvas || !ctx) return;
+
+      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+      particles.forEach((particle) => {
+        particle.y -= particle.speed;
+        particle.phase += 0.012;
+
+        if (particle.y < -5) {
+          particle.y = canvasHeight + 5;
+          particle.x = Math.random() * canvasWidth;
+        }
+
+        const shimmer =
+          particle.alpha * (0.7 + Math.sin(particle.phase) * 0.3);
+
+        ctx.beginPath();
+        ctx.arc(
+          particle.x,
+          particle.y,
+          particle.radius,
+          0,
+          Math.PI * 2
+        );
+        ctx.fillStyle = "rgba(225, 184, 100, " + shimmer + ")";
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animateParticles);
+    }
+
+    if (canvas && ctx) {
+      resizeCanvas();
+      animateParticles();
+      window.addEventListener("resize", resizeCanvas);
+    }
+  </script>
 </body>
 </html>
