@@ -40,24 +40,39 @@ a {
   color: inherit;
 }
 
+
 .topbar {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 10;
   width: 100%;
-  padding: 24px 5%;
+  min-height: 70px;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #c9a66b35;
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-decoration: none;
   color: var(--gold-light);
+  font-family: var(--body);
   font-size: 11px;
+  font-weight: 500;
   letter-spacing: 3px;
 }
+
+.brand-seal {
+  color: var(--gold);
+  font-size: 13px;
+}
+
 
 #motion-toggle {
   background: transparent;
